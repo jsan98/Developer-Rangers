@@ -1,0 +1,36 @@
+.Logovar{
+    width: 100%;
+    height: 100%;
+
+}
+.aStyle{
+    width: 155px;
+ 
+}
+.NotActive
+{
+    border-bottom-width: 0px;
+ 
+}
+.Itemsvar{
+    color: rgb(216, 225, 225);
+    background-color: transparent;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-color:rgb(186, 182, 175) ;
+}
+
+.Activenav{
+    color: rgb(255, 255, 255);
+}
+
+.Itemsvar:hover{
+    color: rgb(255, 255, 255);
+}
+
+.NvarPrin{
+background-color: rgba(48, 18, 48, 0.953);
+opacity: 0.95;
+
+}
