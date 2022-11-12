@@ -5,6 +5,7 @@ doscroll();
 
 });
 
+//desplacar imagen desde el borde izquierdo
 function unoscroll() 
 {
     let elen = document.getElementById('ImagenAb');
@@ -17,6 +18,7 @@ function unoscroll()
     }
 }
 
+//desplacar imagen desde el borde derecho
 function doscroll(){
     let elen1 = document.getElementById('ImgLogsc');
     let posicion1 = elen1.getBoundingClientRect().top;
@@ -29,6 +31,7 @@ function doscroll(){
     }
 }
 
+//Evento load para desplasar imagenes desde la parte superior e inferior de la pantalla
 window.addEventListener('load', function() {
 
 let ancho = window.innerWidth;

@@ -1,3 +1,5 @@
+
+//evento load para habilitar la seleccion del item de la barra de navegacion
 window.addEventListener("load", function(){
 
     if (sessionStorage.getItem("item") == null || sessionStorage.getItem("item") == "1"){
@@ -62,6 +64,7 @@ function AjusActItemRes1(){
     sessionStorage.setItem("itemR", "1");
 }
 
+//Limpia los items de la barra de navegacion
 function Clear_Items (){
     let Items1 = document.getElementById("Item1");
     let Items2 = document.getElementById("Item2");
