@@ -49,9 +49,9 @@
                                         <i class="material-icons">face</i>
                                     </span>
                                 </div>
-                                <input type="text" name="username" class="form-control"
-                                    placeholder="{{ __('Username or Email...') }}" value="{{ old('username', null) }}"
-                                    required autocomplete="username" autofocus>
+                                <x-jet-input id="email" class="form-control" type="email" name="email"
+                                    :value="old('email')" placeholder="{{ __('Username or Email...') }}" required
+                                    autofocus />
                             </div>
                             @if ($errors->has('username'))
                             <div id="username-error" class="error text-danger pl-3" for="username"
@@ -67,8 +67,10 @@
                                         <i class="material-icons">lock_outline</i>
                                     </span>
                                 </div>
-                                <input type="password" name="password" id="password" class="form-control"
-                                    placeholder="{{ __('Password...') }}" required autocomplete="current-password">
+
+
+                                <x-jet-input id="password" class="form-control" type="password" name="password" required
+                                    placeholder="{{ __('Password...') }}" autocomplete="current-password" />
                             </div>
                             @if ($errors->has('password'))
                             <div id="password-error" class="error text-danger pl-3" for="password"
