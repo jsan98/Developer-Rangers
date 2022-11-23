@@ -27,9 +27,12 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get ('/Actividades', function () {
+Route::get('/Actividades', function () {
     return view('Activity');
 })->name('Actividades');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/servicios', function () {
+    return view('servicios');
+})->name('servicios');
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
